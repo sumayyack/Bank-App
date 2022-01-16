@@ -1,0 +1,36 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <h2 style="color: brown; padding-top: 10%;">Transaction History</h2>
+            <table class="table table-bordered" style="border:black; width: 500px;">
+                <thead style="text-align: center;">
+                  <tr>
+                    <th>Sl.No</th>
+                    <th>Amount</th>
+                    <th>Type</th>
+                   
+                  </tr>
+                </thead>
+                <tbody style="text-align: center;">
+                  <tr *ngFor="let transaction of transactions; let i=index;">
+                    <td>{{i+1}}</td>
+                    <td>{{transaction.amount}}</td>
+                    <td>{{transaction.type}}</td>
+                   
+                  </tr>
+                  
+                  
+                </tbody>
+              </table>
+              <br>
+              <a class="btn btn-info" routerLink="/dashboard">Home</a>
+            
+            
+
+                    
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
